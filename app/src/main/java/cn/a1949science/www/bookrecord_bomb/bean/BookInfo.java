@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 public class BookInfo implements Serializable{
 
-    private int book_id;
+    private Integer book_id;
 
     private String book_name;
 
@@ -42,8 +42,6 @@ public class BookInfo implements Serializable{
     private String book_tags;
 
 
-
-
     public BookInfo() {
 
     }
@@ -60,11 +58,11 @@ public class BookInfo implements Serializable{
         this.book_summary = book_summary;
     }
 
-    public void setBook_id(int book_id) {
+    public void setBook_id(Integer book_id) {
         this.book_id = book_id;
     }
 
-    public int getBook_id() {
+    public Integer getBook_id() {
         return book_id;
     }
 

@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 
 public class ReadInfo implements Serializable {
-    private int read_id;
-    private int user_id;
-    private int book_id;
-    private int read_state;
+    private Integer read_id;
+    private Integer user_id;
+    private Integer book_id;
+    private Integer read_state;
     private String read_reason;
     private String read_except;
     private String want_time;
@@ -43,19 +43,19 @@ public class ReadInfo implements Serializable {
         this.finish_time=finish_time;
     }
 
-    public int getBook_id() {
+    public Integer getBook_id() {
         return book_id;
     }
 
-    public int getRead_id() {
+    public Integer getRead_id() {
         return read_id;
     }
 
-    public int getUser_id() {
+    public Integer getUser_id() {
         return user_id;
     }
 
-    public int getRead_state() {
+    public Integer getRead_state() {
         return read_state;
     }
 
@@ -103,7 +103,7 @@ public class ReadInfo implements Serializable {
         return read_time;
     }
 
-    public void setBook_id(int book_id) {
+    public void setBook_id(Integer book_id) {
         this.book_id = book_id;
     }
 
@@ -111,7 +111,7 @@ public class ReadInfo implements Serializable {
         this.read_except = read_except;
     }
 
-    public void setRead_id(int read_id) {
+    public void setRead_id(Integer read_id) {
         this.read_id = read_id;
     }
 
@@ -135,7 +135,7 @@ public class ReadInfo implements Serializable {
         this.read_sort = read_sort;
     }
 
-    public void setRead_state(int read_state) {
+    public void setRead_state(Integer read_state) {
         this.read_state = read_state;
     }
 
@@ -143,7 +143,7 @@ public class ReadInfo implements Serializable {
         this.read_way = read_way;
     }
 
-    public void setUser_id(int user_id) {
+    public void setUser_id(Integer user_id) {
         this.user_id = user_id;
     }
 
