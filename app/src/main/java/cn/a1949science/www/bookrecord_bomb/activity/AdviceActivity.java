@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import cn.a1949science.www.bookrecord_bomb.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class AdviceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_advice);
     }
 }

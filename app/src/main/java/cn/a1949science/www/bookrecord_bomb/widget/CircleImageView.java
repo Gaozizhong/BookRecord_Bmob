@@ -21,14 +21,15 @@ import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import cn.a1949science.www.bookrecord.R;
+import cn.a1949science.www.bookrecord_bomb.R;
+
 
 /**
  * 圆形图片控件
  * Created by 高子忠 on 2018/1/5.
  */
 
-public class CircleImageView extends ImageView {
+public class CircleImageView extends android.support.v7.widget.AppCompatImageView {
 
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 

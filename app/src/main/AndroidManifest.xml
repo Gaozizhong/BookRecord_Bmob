@@ -2,7 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.a1949science.www.bookrecord_bomb">
 
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,8 +26,14 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!-- 获取sd卡写的权限，用于文件上传和下载 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- 允许读取手机状态 用于创建BmobInstallation -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许读使用拍照 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 加入外部存储设备的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -31,7 +51,11 @@
         </activity>
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.PermissionsActivity" />
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
+        <activity android:name=".activity.AdviceActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.BookInfoActivity"></activity>
     </application>
 
 </manifest>
